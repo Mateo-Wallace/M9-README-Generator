@@ -66,11 +66,22 @@ const questions = [
     },
 ];
 
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) { }
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.appendFile('USERREADME.md', JSON.stringify(data, null, '\t'), (err) =>
+        err ? console.error(err) : console.log('Commit logged!')
+    )
+}
 
-// // TODO: Create a function to initialize app
-// function init() { }
+// TODO: Create a function to initialize app
+function init() {
+    inquirer
+        .prompt(questions)
+        // .prompt(...questions)   might need ... instead
+        .then((data) =>
+            writeToFile
+        );
+}
 
-// // Function call to initialize app
-// init();
+// Function call to initialize app
+init();
