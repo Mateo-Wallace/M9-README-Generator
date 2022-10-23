@@ -44,7 +44,7 @@ Follow the prompts and answer as accurately as possible.
 
 Once all inputs have been logged, the README.md will be updated with user inputs. From here copy the file and do with it as you wish.
 
-![example of created README.md](./images/readMeEx.png)
+![example of created README.md](./images/readMeExample.png)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
