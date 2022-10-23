@@ -1,7 +1,9 @@
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `<a id="readme-top"></a>
-[![License Badge Example Filled Input](https://img.shields.io/badge/License-${data.license}-success?style=plastic)](https://choosealicense.com/licenses/${data.license.toLowerCase()}/)
+  return `<p id="readme-top"></p>
+
+[![License Badge](https://img.shields.io/badge/License-${data.license}-success?style=plastic)](https://choosealicense.com/licenses/${data.license.toLowerCase()}/)
+
 # ${data.title}
 
 ## Description
