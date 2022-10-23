@@ -34,12 +34,12 @@ const questions = [
     {
         type: 'input',
         message: 'What are the CONTRIBUTION GUIDELINES for your project?',
-        name: 'contribution',
+        name: 'contributing',
     },
     {
         type: 'input',
         message: 'What are the TEST INSTRUCTIONS for your project?',
-        name: 'test',
+        name: 'tests',
     },
     {
         type: 'input',
@@ -55,7 +55,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
-    fs.appendFile('USERREADME.md', data, (err) =>
+    fs.writeFile('USERREADME.md', data, (err) =>
         err ? console.error(err) : console.log('README file saved as USERREADME.md')
     )
 }
