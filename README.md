@@ -42,9 +42,11 @@ Follow the prompts and answer as accurately as possible.
 
 ![example of user input](./images/prompts.png)
 
-Once all inputs have been logged, the README.md will be updated with user inputs. From here copy the file and do with it as you wish.
+Once all inputs have been logged, the USERREADME.md will be created or updated. From here, copy the file and do with it as you wish.
 
 ![example of created README.md](./images/readMeExample.png)
+
+For an example of the entire process, please refer to this video: [Google Drive - README Generator](https://drive.google.com/file/d/1uwj2dSTU857_3efFne6qR3ijbzxkkLB3/view)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
