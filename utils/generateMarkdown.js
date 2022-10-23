@@ -2,7 +2,7 @@
 function generateMarkdown(data) {
   return `<p id="readme-top"></p>
 
-[![License Badge](https://img.shields.io/badge/License-${data.license}-success?style=plastic)](https://choosealicense.com/licenses/${data.license.toLowerCase()}/)
+[![License Badge](https://img.shields.io/badge/license-${data.license}-success?style=plastic)](https://choosealicense.com/licenses/${data.license.toLowerCase()}/)
 
 # ${data.title}
 
