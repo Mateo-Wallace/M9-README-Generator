@@ -1,16 +1,3 @@
-// inquirer
-//     .prompt(questions)
-//     .then((response) =>
-//         fs.appendFile('info.json', JSON.stringify(response, null, '\t'), (err) =>
-//             err ? console.error(err) : console.log('Commit logged!')
-//         )
-//     );
-
-// REQUIREMENTS TO PRINT
-// title, description, table of contents, 
-// installation instructions, usage, license, contributing, tests, and 
-// questions [github username, email]
-
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
@@ -67,9 +54,9 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.appendFile('USERREADME.md', JSON.stringify(data, null, '\t'), (err) =>
-        err ? console.error(err) : console.log('Commit logged!')
+function writeToFile(data) {
+    fs.appendFile('USERREADME.md', data, (err) =>
+        err ? console.error(err) : console.log('README file saved as USERREADME.md')
     )
 }
 
@@ -77,10 +64,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
         .prompt(questions)
-        // .prompt(...questions)   might need ... instead
-        .then((data) =>
-            writeToFile
-        );
+        .then((responses) => writeToFile(generateMarkdown(responses)));
 }
 
 // Function call to initialize app
